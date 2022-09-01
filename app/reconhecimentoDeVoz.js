@@ -9,6 +9,7 @@ recognition.addEventListener('result', onSpeak);
 function onSpeak(e) {
     chute = e.results[0][0].transcript;
     exibeChuteNaTela(chute)
+    verificaSeOChuteEhUmValorValido(chute)
 }
 
 function exibeChuteNaTela(chute) {
