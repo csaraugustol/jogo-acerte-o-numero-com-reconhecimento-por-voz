@@ -2,11 +2,11 @@ function verificaSeOChuteEhUmValorValido(chute) {
     const numero = +chute;
 
     if(chuteEhInvalido(numero)) {
-        console.log('Valor inválido');
+        elementoChute.innerHTML += `<div>Valor inválido: Fale um número.</div>`
     }
 
     if(numeroMaiorOuMenorValorPermiido(numero)) {
-        console.log(`Valor inválido: o número secreto precisa estar entre ${menorValor} e ${maiorValor}.`);
+        elementoChute.innerHTML += `<div>Número inválido: Fale um número entre ${menorValor} e ${maiorValor}.</div>`;
     }
 }
 
