@@ -6,7 +6,7 @@
     --primary-color: #EAE3D2;
     --shadow-color: #F9F5EB;
     --cor-errou: #FF8B8B;
-    --cor-acertou: #8FE3CF;
+    --cor-acertou: #FFEA11;
 }
 
 body {
@@ -71,7 +71,8 @@ span {
 }
 
 .acertou-numero-secreto {
-    color: var(--acertou);
+    color: var(--cor-acertou);
+    font-size: 2.5em;
 }
 
 .errou {
@@ -91,3 +92,9 @@ span {
     font-weight: bold;
     font-size: 1em;
 }
+
+@media screen and (max-width: 768px) {
+    .box {
+        font-size: 2.5em;
+    }
+  }
