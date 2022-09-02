@@ -1,4 +1,5 @@
 const elementoChute = document.getElementById('chute');
+const comandoInicial = document.getElementById('comando-inicial');
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 recognition.lang = 'pt-Br'
@@ -13,6 +14,10 @@ function onSpeak(e) {
 }
 
 function exibeChuteNaTela(chute) {
+    if(comandoInicial) {
+        comandoInicial.remove();
+    }
+    
     elementoChute.innerHTML = `
     <div>Você disse</div>
     <span class="box">${chute}</span>
