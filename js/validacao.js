@@ -58,7 +58,7 @@ function verificaSeOChuteEhUmValorValido(chute) {
     if (numero === numeroSecreto) {
         contaTentativas++
         let tipoDisplay;
-        if (contaTentativas < maiorRecorde) {
+        if (contaTentativas < maiorRecorde || maiorRecorde === null) {
             localStorage.setItem("maiorRecorde", JSON.stringify(contaTentativas));
             tipoDisplay = "block";
         } else {
