@@ -1,11 +1,10 @@
 function verificaSeOChuteEhUmValorValido(chute) {
-    console.log("chuite", chute === "game over");
     const numero = +chute;
 
     if(chute === "game over") {
         document.body.innerHTML = `
-        <button id="btn-dark-mode" style="display: none"><i class="fa-solid ${darkOrLigth}"></i></button>
-        <div class="container">
+        <button id="btn-dark-mode" onload="gameOver()" style="display: none"><i class="fa-solid ${darkOrLigth}"></i></button>
+        <div class="container" id="gameOver">
         <h1 class="errou">Você disse</h1>
         <h2 class="errou">"Game Over"</h2>
         <h3>Clique no botão para reiniciar o jogo</h3>
@@ -28,8 +27,9 @@ function verificaSeOChuteEhUmValorValido(chute) {
 
     if(numero === numeroSecreto) {
         document.body.innerHTML = `
-        <button id="btn-dark-mode" style="display: none"><i class="fa-solid ${darkOrLigth}"></i></button>
-        <div class="container">
+        <button id="btn-dark-mode" onload="vitoria()" style="display: none"><i class="fa-solid ${darkOrLigth}"></i></button>
+        <div class="container" id="vitoria">
+        <i class="fa-solid fa-trophy fa-2xl" style="margin-bottom: 25px"></i>
         <h1>Você acertou!</h1>
         <h3>O número secreto era <span class="acertou-numero-secreto">${numeroSecreto}</span></h3>
         <button id="jogar-novamente" class="btn-jogar-novamente">Jogar Novamente <i class="fa-solid fa-rotate-right"></i></button>
