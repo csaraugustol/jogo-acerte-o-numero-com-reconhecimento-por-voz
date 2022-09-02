@@ -1,11 +1,16 @@
 const btnDarkMode = document.querySelector("#btn-dark-mode");
 
-btnDarkMode.addEventListener("click", () => {
+btnDarkMode.addEventListener("click", (e) => {
     document.body.classList.toggle("dark-mode")
-    //btnDarkMode.remove();
-    //newBtn = document.createElement("button");
-    
-    //document.body.innerHTML = "<button id='btn-dark-mode'><i class='fa-solid fa-sun'></i></i></button>";
+    let iconClasses = btnDarkMode.children[0]
+
+    if (iconClasses.classList[1] === "fa-moon") {
+        iconClasses.classList.remove("fa-moon");
+        iconClasses.classList.toggle("fa-sun")
+    } else {
+        iconClasses.classList.remove("fa-sun");
+        iconClasses.classList.toggle("fa-moon")
+    }
 })
 
 
