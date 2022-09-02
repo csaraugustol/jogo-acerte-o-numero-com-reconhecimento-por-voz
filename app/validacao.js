@@ -7,7 +7,7 @@ function verificaSeOChuteEhUmValorValido(chute) {
     }
 
     if(numeroMaiorOuMenorValorPermiido(numero)) {
-        elementoChute.innerHTML += `<div class="errou">Número inválido: Fale um número entre ${menorValor} e ${maiorValor}.</div>`;
+        elementoChute.innerHTML += `<div class="errou">Número inválido: Fale um número entre <span>${menorValor}</span> e <span>${maiorValor}</span>.</div>`;
         return;
     }
 
