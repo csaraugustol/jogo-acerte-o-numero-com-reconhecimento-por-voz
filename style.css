@@ -13,6 +13,7 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     font-family: var(--font-family);
+    transition: 1s;
 }
 
 .dark-mode {
@@ -37,6 +38,7 @@ body {
     padding: 10px;
     cursor: pointer;
     width: 60px;
+    border-radius: 5px;
 }
 
 h1 {
