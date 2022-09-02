@@ -1,19 +1,21 @@
-"use strict"
+// "use strict"
 
-const gameOver = document.getElementById("gameOver");
-const vitoria = document.getElementById("vitoria");
+// const gameOver = document.getElementById("gameOver");
+// const vitoria = document.getElementById("vitoria");
 
-console.log(gameOver, vitoria, "dfsdf");
+// console.log(gameOver, vitoria, "dfsdf");
 
-const audioGanhou = document.getElementById("som_ganhou")
-const audioGameOver = document.getElementById("som_game-over")
+// const audioGanhou = document.getElementById("som_ganhou")
+// const audioGameOver = document.getElementById("som_game-over")
 
-function gameOver() {
+// function gameOver() {
 
-    audioGameOver.play();
-}
+//     audioGameOver.play();
+// }
 
-function vitoria() {
 
-    audioGanhou.play();
-}
+
+// function vitoria() {
+
+//     audioGanhou.play();
+// }
