@@ -3,7 +3,7 @@ const maiorRecorde = JSON.parse(localStorage.getItem("maiorRecorde"));
 localStorage.setItem("maiorRecorde", JSON.stringify(Number.MAX_SAFE_INTEGER));
 
 const recorde = document.getElementById("recorde");
-if(maiorRecorde === Number.MAX_SAFE_INTEGER) {
+if(maiorRecorde === Number.MAX_SAFE_INTEGER || maiorRecorde === null) {
     recorde.innerHTML = ""
 } else if (contaTentativas > maiorRecorde){
     recorde.innerHTML = `Recorde: ${maiorRecorde} tentativas`
