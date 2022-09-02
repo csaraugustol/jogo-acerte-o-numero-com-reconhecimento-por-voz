@@ -40,7 +40,6 @@ function verificaSeOChuteEhUmValorValido(chute) {
         <div class="errou">Fale apenas número!</div>
         <audio src="sounds/erro.wav" id="som-erro"></audio>
         `;
-        contaTentativas++
         let audioErro = document.getElementById("som-erro");
         audioErro.play();
         return;
