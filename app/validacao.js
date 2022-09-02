@@ -13,9 +13,12 @@ function verificaSeOChuteEhUmValorValido(chute) {
 
     if(numero === numeroSecreto) {
         document.body.innerHTML = `
-        <h2>Você acertou!</h2>
+        <button id="btn-dark-mode" style="display: none"><i class="fa-solid ${darkOrLigth}"></i></button>
+        <div class="container">
+        <h1>Você acertou!</h1>
         <h3>O número secreto era <span class="acertou-numero-secreto">${numeroSecreto}</span></h3>
         <button id="jogar-novamente" class="btn-jogar-novamente">Jogar Novamente <i class="fa-solid fa-rotate-right"></i></button>
+        </div>
         `;
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `<div class="errou">O número secreto é menor! <i class="fa-solid fa-arrow-down"></i></div>`
