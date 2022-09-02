@@ -54,7 +54,7 @@ function verificaSeOChuteEhUmValorValido(chute) {
         return;
     }
 
-    if (numero === 117) {
+    if (numero === numeroSecreto) {
         contaTentativas++
         let tipoDisplay;
         if (contaTentativas < maiorRecorde || maiorRecorde === null) {
