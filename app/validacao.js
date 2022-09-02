@@ -18,9 +18,9 @@ function verificaSeOChuteEhUmValorValido(chute) {
         <button id="jogar-novamente" class="btn-jogar-novamente">Jogar Novamente <i class="fa-solid fa-rotate-right"></i></button>
         `;
     } else if (numero > numeroSecreto) {
-        elementoChute.innerHTML += `<div>O número secreto é menor! <i class="fa-solid fa-arrow-down"></i></div>`
+        elementoChute.innerHTML += `<div class="errou">O número secreto é menor! <i class="fa-solid fa-arrow-down"></i></div>`
     } else {
-        elementoChute.innerHTML += `<div>O número secreto é maior! <i class="fa-solid fa-arrow-up"></i></div>`
+        elementoChute.innerHTML += `<div class="errou">O número secreto é maior! <i class="fa-solid fa-arrow-up"></i></div>`
     }
 }
 

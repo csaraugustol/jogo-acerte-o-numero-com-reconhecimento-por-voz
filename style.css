@@ -5,7 +5,8 @@
     --bg-color: #0078AA;
     --primary-color: #EAE3D2;
     --shadow-color: #F9F5EB;
-    --span-color: #FF8B8B;
+    --cor-errou: #FF8B8B;
+    --cor-acertou: #8FE3CF;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 .dark-mode {
     --bg-color: #002B5B;
     --primary-color: #8FE3CF;
+    --cor-acertou: #FFEA11;
 }
 
 .container {
@@ -69,7 +71,12 @@ span {
 }
 
 .acertou-numero-secreto {
-    color: var(--span-color);
+    color: var(--acertou);
+}
+
+.errou {
+    color: var(--cor-errou);
+    font-weight: bold;
 }
 
 .btn-jogar-novamente {
